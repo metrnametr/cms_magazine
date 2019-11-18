@@ -1,0 +1,19 @@
+@import '../../style/varibles.scss';
+
+.link-control {
+    font-weight: 300 !important;
+    text-transform: none;
+    font-size: .8rem;
+}
+
+
+.favorites-circle-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    background: $colorPrimary;
+    color: white;
+}

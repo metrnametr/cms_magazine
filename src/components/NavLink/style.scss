@@ -1,0 +1,26 @@
+@import '../../style/varibles.scss';
+
+.nav-link, .nav-link-control {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 25px;
+    font-size: .8rem;
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+    a {
+        color: black;
+        &:hover {
+            text-decoration: none;
+            color: $colorPrimary;
+            border-bottom: 1px solid $colorPrimary;
+        }
+    }
+    &.checked {
+        a {
+            color: $colorPrimary    ;
+            border-bottom: 1px solid $colorPrimary;
+        }
+    }
+}

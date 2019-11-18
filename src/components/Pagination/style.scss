@@ -1,0 +1,20 @@
+@import '../../style/varibles.scss';
+
+.pagination-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    .pagination-item {
+        cursor: pointer;
+        padding: 10px;
+        border: 1px solid $colorPrimary;
+        border-right: 0;
+        &:last-of-type {
+            border-right: 1px solid $colorPrimary;
+        }
+        &:hover, &.current {
+            background: $colorPrimary;
+            color: white;
+        }
+    }
+}

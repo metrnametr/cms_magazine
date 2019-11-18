@@ -1,0 +1,51 @@
+@import '../../style/varibles.scss';
+
+table {
+    width: 100%;
+}
+
+th {
+    font-size: .8rem;
+    color: #9f9f9f;
+    text-transform: uppercase;
+    span {
+        cursor: pointer;
+    }
+
+    &:first-of-type, , &:last-of-type, &:nth-child(2) {
+        span {
+            cursor: initial;
+        }
+    }
+}
+
+.th-checked-asc, .th-checked-desc {
+    color: $colorPrimary;
+    div {
+        position: absolute;
+        left: 105%;
+        top: 0;
+        width: 0;
+        height: 0;
+    }
+    span {
+        position: relative;
+    }
+}
+
+.th-checked-asc {
+    div {
+        
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 12px solid $colorPrimary;
+    }
+}
+
+.th-checked-desc {
+    div {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 12px solid $colorPrimary;
+    }
+}

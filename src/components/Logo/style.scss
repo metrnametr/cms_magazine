@@ -1,0 +1,35 @@
+@import '../../style/varibles.scss';
+
+.logo {
+    &-container {
+        display: flex;
+        align-items: center;
+        width: 170px;
+        height: 45px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        height: 100%;
+        background-color: $colorPrimary;
+        color: white;
+        margin-right: 8px;
+        font-size: 25px;
+    }
+    &-right {
+        &_title {
+            font-size: 20px;
+            text-transform: lowercase;
+            color: black;
+        }
+        &_title_post {
+            font-weight: 300;
+            font-size: .5rem;
+            letter-spacing: .5px;
+        }
+    }
+}
+
